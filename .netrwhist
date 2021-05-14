@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/emanuele/informatica/Repositories/p5_sketches/Flowfield'
+let g:netrw_dirhist_4='/home/emanuele/.config/nvim'
+let g:netrw_dirhist_3='/home/emanuele/.config/nvim/plugin'
+let g:netrw_dirhist_2='/home/emanuele/.config/nvim'
+let g:netrw_dirhist_1='/home/emanuele/.config/nvim/plugin'
+let g:netrw_dirhist_0='/home/emanuele/.config/nvim'
+let g:netrw_dirhist_9='/home/emanuele/.config/nvim/plugin'
+let g:netrw_dirhist_8='/home/emanuele/.config/nvim'
+let g:netrw_dirhist_7='/home/emanuele/Scrivania/università/Magistrale/secondo_semestre/advanced_c++/repoCorso/function'
+let g:netrw_dirhist_6='/home/emanuele/informatica/vim'
