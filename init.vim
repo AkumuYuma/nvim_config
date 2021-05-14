@@ -24,6 +24,13 @@ vnoremap <C-c> "+yi
 vnoremap <C-x> "+c
 vnoremap <C-v> c<esc>"+p
 inoremap <C-v> <esc>"+pa
+" digita %% nella command line mode per avere il path del file attuale
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+" remap di spostamento tra i buffer
+nnoremap <leader>bn :bnext<cr>
+nnoremap <leader>bp :bprev<cr>
+nnoremap <leader>bb :bfirst<cr>
+nnoremap <leader>BB :blast<cr>
 
 " Impostazioni generiche
 colorscheme gruvbox
