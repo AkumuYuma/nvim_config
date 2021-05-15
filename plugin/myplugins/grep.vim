@@ -7,11 +7,12 @@
 " per far funzionare un operatore con i movimenti normali, devo settare
 " operatorfunc a GrepOperator e poi chiamare l'operatore g@. L'operatore @g
 " chiamerà la funzione in operatorfunc applicando il movimento in automatico
-nnoremap <leader>g :set operatorfunc=GrepOperator<cr>g@
-vnoremap <leader>g :<c-u>call GrepOperator(visualmode())<cr>
+nnoremap <leader>g :set operatorfunc=<SID>GrepOperator<cr>g@
+vnoremap <leader>g :<c-u>call <SID>GrepOperator(visualmode())<cr>
 
-
-function! GrepOperator(type)
+" s: mi dichiara il nome solo nello scope locale del file, per poterlo leggere
+" nei remap devo mettere <SID> prima della funzione da chiamare
+function! s:GrepOperator(type)
     " Salvo il contenuto del registro @ prima di usarlo per copiare e
     " incollare la selezione
     let saved_register_content = @@

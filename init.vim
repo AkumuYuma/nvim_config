@@ -55,7 +55,7 @@ command! Rel :w <bar> :so %
 
 " --------------------------- Funzioni e autocomandi ------------------------
 "  Cancella gli spazi bianchi alla fine di una riga
-function! TrimWhiteSpace()
+function! s:TrimWhiteSpace()
     " Salva il contesto attuale
     let l:save = winsaveview()
     " Sostituisce gli spazi bianchi alla fine di una frase con niente
@@ -70,7 +70,7 @@ augroup spazi
     " Se non lo mettessi, chiamerei l'autocomando ogni volta che il file viene caricato
     autocmd!
     " prima di scrivere sul buffer, eseguo su tutti i tipi di file (*) il comando :call TrimWhiteSpace per eliminare gli spazi
-    autocmd BufWritePre * :call TrimWhiteSpace()
+    autocmd BufWritePre * :call <SID>TrimWhiteSpace()
 augroup END
 " ----------------------------------------------------------------------------
 
