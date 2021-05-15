@@ -1,8 +1,3 @@
-" Impostazioni generiche
-colorscheme gruvbox
-highlight Normal guibg=none
-
-let g:rainbow_active = 1
 
 " Plugin
 call plug#begin('~/.config/nvim/plugged')
@@ -48,8 +43,6 @@ nnoremap <leader>p /[)\]}]<cr>a<esc>
 
 " ----------------------------------------------------------------------------
 
-
-
 " ------------------------------------ Comandi -------------------------------
 " Scratch per creare un nuovo buffer
 command! Scratch lua require"init".makeScratch()
@@ -79,4 +72,11 @@ augroup spazi
     " prima di scrivere sul buffer, eseguo su tutti i tipi di file (*) il comando :call TrimWhiteSpace per eliminare gli spazi
     autocmd BufWritePre * :call TrimWhiteSpace()
 augroup END
+" ----------------------------------------------------------------------------
+
+" -------------------------- Impostazioni generiche --------------------------
+colorscheme gruvbox
+highlight Normal guibg=none
+
+let g:rainbow_active = 1
 " ----------------------------------------------------------------------------
