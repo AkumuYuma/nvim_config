@@ -7,7 +7,7 @@ function! GitPush()
     Git add -A
     Git commit -m "Updates"
     let choice = confirm("Push su main?", "&Yes\n&No")
-    if choice == 0
+    if choice == 1
         Git push origin main
     endif
 endfunction
