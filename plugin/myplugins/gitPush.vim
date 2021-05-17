@@ -6,9 +6,10 @@ function! GitPush()
     " e fare un push sul main
     Git add -A
     Git commit -m "Updates"
-    let choice = confirm("Push su main?", "&[Y]es\n&[N]o")
+    let choice = confirm("Push su main?", "&Yes\n&No")
     if choice == 0
         Git push origin main
+    endif
 endfunction
 
 command! Gitpush call GitPush()
