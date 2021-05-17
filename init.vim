@@ -6,16 +6,20 @@ Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+Plug 'tpope/vim-fugitive'
+" gcc per commentare una linea, gc{motion} per commentare diverse linee
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+" Con repeat posso usare . per ripetere l'azione di surround
+Plug 'tpope/vim-repeat'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 call plug#end()
-
 
 
 " ------------------------------------ Remaps -------------------------------
@@ -39,9 +43,6 @@ nnoremap <up>    :bfirst<cr>
 nnoremap <down>  :blast<cr>
 " digita %% nella command line mode per avere il path del file attuale
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-" Salta alla prossima chiusura di parentesi
-nnoremap <leader>p /[)\]}]<cr>a<esc>
-
 " ----------------------------------------------------------------------------
 
 " ------------------------------------ Comandi -------------------------------
@@ -51,7 +52,6 @@ command! Scratch lua require"init".makeScratch()
 command! Rel :w <bar> :so %
 
 " ----------------------------------------------------------------------------
-
 
 
 " --------------------------- Funzioni e autocomandi ------------------------
