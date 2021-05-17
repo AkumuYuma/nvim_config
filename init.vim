@@ -73,6 +73,7 @@ augroup spazi
     " prima di scrivere sul buffer, eseguo su tutti i tipi di file (*) il comando :call TrimWhiteSpace per eliminare gli spazi
     autocmd BufWritePre * :call <SID>TrimWhiteSpace()
 augroup END
+
 " ----------------------------------------------------------------------------
 
 " -------------------------- Impostazioni generiche --------------------------
