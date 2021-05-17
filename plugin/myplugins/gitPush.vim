@@ -5,6 +5,7 @@ function! GitPush()
     " e fare un push sul main
     Git add -A
     Git commit -m "Updates"
+    Git push origin main
 endfunction
 
 command! Gitpush call GitPush()
