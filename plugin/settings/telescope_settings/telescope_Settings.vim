@@ -3,7 +3,6 @@ path = ';/home/emanuele/.config/nvim/plugin/settings/telescope_settings/telescop
 package.path = package.path..path
 EOF
 
-lua require("telescope_Settings")
 " Remaps
 " Cerca nel progetto
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -16,3 +15,5 @@ nnoremap <leader>fh <cmd>lua require('telescope_Settings').search_home()<cr>
 " remap per ricerca solo tra nvim config files
 " eseguo la funzione search_dotfiles che si trova nel modulo lua.telescope
 nnoremap <leader>vrc <cmd>lua require('telescope_Settings').search_dotfiles()<cr>
+" Apro il file browser di telescope
+nnoremap <leader><leader>ex <cmd>lua require('telescope.builtin').file_browser({previewer = false})<cr>

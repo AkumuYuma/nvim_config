@@ -77,6 +77,7 @@ M.search_home = function()
         previewer = false,
     })
 end
+
 -- Alla fine dei moduli si mette
 return M
 
