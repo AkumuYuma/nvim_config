@@ -3,10 +3,11 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
+Plug 'chemzqm/vim-jsx-improve'
 Plug 'luochen1990/rainbow'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 " gcc per commentare una linea, gc{motion} per commentare diverse linee
 Plug 'tpope/vim-commentary'
