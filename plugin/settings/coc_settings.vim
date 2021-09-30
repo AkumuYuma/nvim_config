@@ -77,9 +77,9 @@ augroup mygroup
 augroup end
 
 " Formatta il file quando salvi
-augroup mygroup
-    autocmd!
-    autocmd BufWritePre * silent! :call CocAction('format')
-augroup END
+" augroup mygroup
+"     autocmd!
+"     autocmd BufWritePre * silent! :call CocAction('format')
+" augroup END
 " ---------------------------------------------------------------------------- "
 
