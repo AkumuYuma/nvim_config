@@ -18,6 +18,7 @@ Plug 'tpope/vim-repeat'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'sharkdp/fd'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
 call plug#end()
@@ -74,6 +75,7 @@ augroup spazi
     " prima di scrivere sul buffer, eseguo su tutti i tipi di file (*) il comando :call TrimWhiteSpace per eliminare gli spazi
     autocmd BufWritePre * :call <SID>TrimWhiteSpace()
 augroup END
+
 
 " ----------------------------------------------------------------------------
 

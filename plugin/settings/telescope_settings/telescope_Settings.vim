@@ -14,6 +14,7 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope_Settings').search_home()<cr>
 " remap per ricerca solo tra nvim config files
 " eseguo la funzione search_dotfiles che si trova nel modulo lua.telescope
-nnoremap <leader>vrc <cmd>lua require('telescope_Settings').search_dotfiles()<cr>
+" fp sta per find-private (configuration files)
+nnoremap <leader>fp <cmd>lua require('telescope_Settings').search_dotfiles()<cr>
 " Apro il file browser di telescope
 nnoremap <leader><leader>ex <cmd>lua require('telescope.builtin').file_browser({previewer = false})<cr>
