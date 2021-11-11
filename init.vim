@@ -76,7 +76,11 @@ augroup spazi
     autocmd BufWritePre * :call <SID>TrimWhiteSpace()
 augroup END
 
-
+" AutoComando per leggere i file .C come cpp
+augroup cplusplus
+    autocmd!
+    autocmd BufNewFile,BufRead *.C set filetype=cpp
+augroup END
 " ----------------------------------------------------------------------------
 
 " -------------------------- Impostazioni generiche --------------------------
